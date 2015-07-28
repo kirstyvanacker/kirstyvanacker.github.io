@@ -1,0 +1,255 @@
+/********************************************
+	Tag Resets
+********************************************/
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/********************************************
+	Normalize CSS
+	http://necolas.github.com/normalize.css/
+********************************************/
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+	display: block;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************************************
+	Web Fonts
+****************************************** */
+
+/* FONTS */
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/opensans-regular.eot');
+    src: url('fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular.woff') format('woff'),
+         url('fonts/opensans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/opensans-bold.eot');
+    src: url('fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-bold.woff') format('woff'),
+         url('fonts/opensans-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/opensans-semibold.eot');
+    src: url('fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-semibold.woff') format('woff'),
+         url('fonts/opensans-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ******************************************
+	Main Styles
+****************************************** */
+
+body {
+	background: #feb0a6;
+	color: #3b3b3b;
+	font: 17px/1.65 'Fira Sans','OpenSans', Arial, sans-serif;
+	letter-spacing: -0.01em;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+a {
+	color: inherit;
+	font-style: italic;
+	text-decoration: none;
+	border-bottom: none;
+	line-height: 1.1em;
+	display: inline-block;
+}
+a:hover {
+	border-bottom: 1px solid #3b3b3b;
+}
+
+
+/* ******************************************
+	Landing Page
+****************************************** */
+.landing-page {
+	padding-top: 65px;
+	overflow: hidden;
+	margin-left: 50px;
+}
+.author-intro {
+	padding-top: 35px;
+	margin-right: 650px;
+}
+h1.title {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 58px;
+	line-height: 1.3em;
+}
+.social-btns {
+	margin: 35px 0;
+}
+.social-btns .soc-icon {
+	background: url(../img/soc-sprite.png) no-repeat;
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+	margin-left: 2px;
+    -webkit-transition: 500ms ease-in-out;
+    -moz-transition: 500ms ease-in-out;
+    -o-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out;
+}
+.social-btns .soc-icon.tw {
+	background-position: 0 0;
+}
+.social-btns .soc-icon.fb {
+	background-position: -28px 0;
+}
+.social-btns .soc-icon.ln {
+	background-position: -56px 0;
+}
+.social-btns .soc-icon.db {
+	background-position: -83px 0;
+	width: 23px;
+}
+.social-btns .soc-icon:hover {
+	-moz-transform: scale(1) rotate(360deg);
+	-webkit-transform: scale(1) rotate(360deg);
+	-o-transform: scale(1) rotate(360deg);
+	-ms-transform: scale(1) rotate(360deg);
+	transform: scale(1) rotate(360deg);
+	border-bottom: none;
+}
+
+
